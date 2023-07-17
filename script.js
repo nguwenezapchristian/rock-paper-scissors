@@ -16,7 +16,10 @@ function playRound(playerSelection, computerSelection) {
 }
 const playerSelection = prompt("What's your choice?");
 const computerSelection = getComputerChoice(computerChoice);
-playRound(playerSelection, computerSelection);
+
 function game() {
-    
+   let score = 0;
+   for (let i = 0; i < 5; i++) {
+    playRound(playerSelection, computerSelection);
+   } 
 }
