@@ -8,7 +8,9 @@ function playRound(playerSelection, computerSelection) {
         return "Play again! your choices were the same";
     } else if(computerSelection === "Paper" && playerSelection === "Rock") {
         return `You Lose! ${computerSelection} beats ${playerSelection}`;
-    } else if (computerSelection === "Scissors" && playerSelection)
+    } else if (computerSelection === "Scissors" && playerSelection === "Rock") {
+        return `You Won! ${playerSelection} beats ${computerSelection}`;
+    }
 }
 const playerSelection = "Rock";
 const computerSelection = getComputerChoice();
