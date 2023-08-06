@@ -25,6 +25,8 @@ function displayWinner(winner) {
 function resetGame() {
     playerScore = 0;
     computerScore = 0;
+    displayInfo.textContent = "PLAY AGAIN!";
+    // displayWinnerOnScreen.textContent = "";
     updateScores();
 }
 
